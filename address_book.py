@@ -16,7 +16,7 @@ def addContact(fullName, phone, email="", city="Unknown"):
 
 
 def contactId(fullName):
-    return hashlib.md5(fullName.encode()).hexdigest()[:6]
+    return hashlib.sha256(fullName.encode()).hexdigest()[:6]
 
 
 def searchContacts(text):
