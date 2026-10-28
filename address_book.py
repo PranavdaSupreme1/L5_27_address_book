@@ -24,7 +24,7 @@ def contact_id(full_name):
 
 def search_contacts(text):
     """Return names whose name or phone number contains the text."""
-    found=[]
+    found = []
     for name, info in CONTACTS.items():
         if text.lower() in name.lower() or text in info["phone"]:
             found.append(name)
@@ -92,7 +92,7 @@ def main():
     export_csv()
     backup_book()
     restored = restore_book()
-    print("Contacts restored:", len(restored), "| first:",sorted(restored)[0])
+    print("Contacts restored:", len(restored), "| first:", sorted(restored)[0])
     print("Restored contacts match the in-memory address book:", restored == CONTACTS)
 
 
