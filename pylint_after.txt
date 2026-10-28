@@ -1,25 +1,10 @@
 ************* Module address_book
-address_book.py:11:0: C0103: Function name "addContact" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:11:15: C0103: Argument name "fullName" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:20:0: C0103: Function name "contactId" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:20:14: C0103: Argument name "fullName" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:25:0: C0103: Function name "searchContacts" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:34:0: C0103: Function name "updateCity" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:34:15: C0103: Argument name "fullName" doesn't conform to snake_case naming style (invalid-name)
 address_book.py:39:11: W0718: Catching too general exception Exception (broad-exception-caught)
-address_book.py:44:0: C0103: Function name "contactsByCity" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:53:0: C0103: Function name "printDirectory" doesn't conform to snake_case naming style (invalid-name)
 address_book.py:56:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-address_book.py:60:0: C0103: Function name "exportCsv" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:60:14: C0103: Argument name "fileName" doesn't conform to snake_case naming style (invalid-name)
 address_book.py:62:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-address_book.py:68:0: C0103: Function name "backupBook" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:68:15: C0103: Argument name "fileName" doesn't conform to snake_case naming style (invalid-name)
 address_book.py:70:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-address_book.py:74:0: C0103: Function name "restoreBook" doesn't conform to snake_case naming style (invalid-name)
-address_book.py:74:16: C0103: Argument name "fileName" doesn't conform to snake_case naming style (invalid-name)
 address_book.py:76:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.83/10 (previous run: 5.47/10, +1.36)
+Your code has been rated at 9.21/10 (previous run: 6.83/10, +2.38)
 
