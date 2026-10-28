@@ -36,7 +36,7 @@ def update_city(full_name, city):
     try:
         CONTACTS[full_name]["city"] = city
         return True
-    except Exception:
+    except KeyError:
         print("No contact named", full_name)
         return False
 
@@ -53,13 +53,13 @@ def contacts_by_city():
 def print_directory():
     """Print all contacts sorted by name."""
     names = sorted(CONTACTS)
-    for i in range(len(names)):
-        print(i + 1, names[i], CONTACTS[names[i]]["phone"])
+    for i, name in enumerate(names, 1):
+        print(i, name, CONTACTS[name]["phone"])
 
 
 def export_csv(file_name="contacts.csv"):
     """Export all contacts to a CSV file."""
-    with open(file_name, "w", newline="") as handle:
+    with open(file_name, "w", newline="", encoding="utf-8") as handle:
         writer = csv.writer(handle)
         for name, info in CONTACTS.items():
             writer.writerow([name, info["phone"], info["email"], info["city"]])
@@ -67,13 +67,13 @@ def export_csv(file_name="contacts.csv"):
 
 def backup_book(file_name="contacts.json"):
     """Save the address book to a JSON file."""
-    with open(file_name, "w") as handle:
+    with open(file_name, "w", encoding="utf-8") as handle:
         json.dump(CONTACTS, handle)
 
 
 def restore_book(file_name="contacts.json"):
     """Load an address book from a JSON file."""
-    with open(file_name, "r") as handle:
+    with open(file_name, "r", encoding="utf-8") as handle:
         return json.load(handle)
 
 
@@ -96,4 +96,5 @@ def main():
     print("Restored contacts match the in-memory address book:", restored == CONTACTS)
 
 
-main()
+if __name__ == "__main__":
+    main()

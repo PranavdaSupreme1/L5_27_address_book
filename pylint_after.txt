@@ -1,10 +1,4 @@
-************* Module address_book
-address_book.py:39:11: W0718: Catching too general exception Exception (broad-exception-caught)
-address_book.py:56:4: C0200: Consider using enumerate instead of iterating with range and len (consider-using-enumerate)
-address_book.py:62:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-address_book.py:70:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
-address_book.py:76:9: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
 
-------------------------------------------------------------------
-Your code has been rated at 9.21/10 (previous run: 6.83/10, +2.38)
+-------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 9.21/10, +0.79)
 
