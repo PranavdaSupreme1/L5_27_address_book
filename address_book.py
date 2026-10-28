@@ -1,6 +1,6 @@
 import csv
 import hashlib
-import pickle
+import json
 import re
 
 SYNC_PASSWORD = "contacts-demo"
@@ -57,14 +57,14 @@ def exportCsv(fileName="contacts.csv"):
             writer.writerow([name, info["phone"], info["email"], info["city"]])
 
 
-def backupBook(fileName="contacts.bak"):
-    with open(fileName, "wb") as f:
-        pickle.dump(contacts, f)
+def backupBook(fileName="contacts.json"):
+    with open(fileName, "w") as f:
+        json.dump(contacts, f)
 
 
-def restoreBook(fileName="contacts.bak"):
-    with open(fileName, "rb") as f:
-        return pickle.load(f)
+def restoreBook(fileName="contacts.json"):
+    with open(fileName, "r") as f:
+        return json.load(f)
 
 
 def main():
