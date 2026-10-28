@@ -49,7 +49,6 @@ def contacts_by_city():
     return grouped
 
 
-
 def print_directory():
     """Print all contacts sorted by name."""
     names = sorted(CONTACTS)
